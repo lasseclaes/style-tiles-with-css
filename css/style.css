@@ -24,7 +24,7 @@
   --white-space: 1rem;
 }
 
-/* :root {
+:root {
   --bg-color: #9f1c19;
   --link-color: #65d1fb;
   --link-hover-color: #ff8500;
@@ -37,7 +37,6 @@
 
   --white-space: 1rem;
 }
- */
 
 html {
   font-size: 100%;
