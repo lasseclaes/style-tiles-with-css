@@ -11,6 +11,18 @@
 
 /* change these */
 :root {
+  --bg-color: #9f1c19;
+  --link-color: #65d1fb;
+  --link-hover-color: #ff8500;
+  --color-4: #05abeb;
+  --color-5: #ff241f;
+
+  --primary-font: "Open Sans", sans-serif;
+  --secondary-font: "Droid Serif", serif;
+  --main-text-color: #222222;
+
+  --white-space: 1rem;
+  
   --bg-color: #000;
   --link-color: #000;
   --link-hover-color: #000;
@@ -25,17 +37,7 @@
 }
 
 /* :root {
-  --bg-color: #9f1c19;
-  --link-color: #65d1fb;
-  --link-hover-color: #ff8500;
-  --color-4: #05abeb;
-  --color-5: #ff241f;
 
-  --primary-font: "Open Sans", sans-serif;
-  --secondary-font: "Droid Serif", serif;
-  --main-text-color: #222222;
-
-  --white-space: 1rem;
 }
  */
 
