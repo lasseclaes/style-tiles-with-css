@@ -3,6 +3,10 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,800italic,400,800);
 @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic);
 
+@import url(https://fonts.googleapis.com/css2?family=Heebo:wght@500&family=Noto+Sans:wght@700&display=swap);
+
+@import url(https://fonts.googleapis.com/css2?family=Heebo:wght@500&family=Noto+Sans:wght@700&family=Poppins:wght@200&display=swap);
+
 * {
   box-sizing: border-box;
 }
@@ -19,19 +23,19 @@
 
   --primary-font: "Open Sans", sans-serif;
   --secondary-font: "Droid Serif", serif;
-  --main-text-color: #222222;
+  --main-text-color: #d81111;
 
   --white-space: 1rem;
-  
-  --bg-color: #000;
-  --link-color: #000;
-  --link-hover-color: #000;
-  --color-4: #000;
-  --color-5: #000;
 
-  --primary-font: sans-serif;
-  --secondary-font: serif;
-  --main-text-color: #000;
+  --bg-color: #000;
+  --link-color: #3c42ef;
+  --link-hover-color: #29d6f7;
+  --color-4: #a634f0;
+  --color-5: #c7036e;
+
+  --primary-font: "Heebo", sans-serif;
+  --secondary-font: "Poppins", sans-serif;
+  --main-text-color: #fff;
 
   --white-space: 1rem;
 }
@@ -56,20 +60,20 @@ main,
 footer {
   max-width: 1300px;
   margin: 0 auto;
-  padding: calc(2*var(--white-space));
+  padding: calc(2 * var(--white-space));
 }
 
 .full-width {
   background: var(--bg-color);
   color: white;
-  width: 100%
+  width: 100%;
 }
 
 .header-wrapper h1 {
   font-size: 3rem;
   text-transform: uppercase;
   letter-spacing: -2px;
-  padding-right: .75em;
+  padding-right: 0.75em;
   font-weight: bold;
   color: white;
 }
@@ -91,11 +95,12 @@ footer {
 }
 
 main {
-  padding: calc(2*var(--white-space));
+  padding: calc(2 * var(--white-space));
+  background-color: var(--bg-color);
 }
 
 section {
-  margin-bottom: calc(4*var(--white-space));
+  margin-bottom: calc(4 * var(--white-space));
 }
 
 .section-heading {
@@ -103,7 +108,7 @@ section {
   font-style: italic;
   font-size: 1.3rem;
   color: #777;
-  margin: .5rem 0;
+  margin: 0.5rem 0;
 }
 
 ul {
@@ -148,19 +153,20 @@ ul li:last-child {
 }
 
 .texture-swatch-1 {
-  background: url(../img/pw_maze_white.png) top left repeat;
+  background: url(http://www.transparenttextures.com/patterns/diagmonds.png) top
+    left repeat;
 }
 
 .texture-swatch-2 {
-  background: url(../img/subtle_grunge.png) top left repeat;
+  /* background: url(../img/subtle_grunge.png) top left repeat; */
 }
 
 .texture-swatch-1 {
-  background: url(../img/pw_maze_white.png) top left repeat;
+  /* background: url(../img/pw_maze_white.png) top left repeat; */
 }
 
 .texture-swatch-3 {
-  background: url(../img/white_paperboard.png) top left repeat;
+  /* background: url(../img/white_paperboard.png) top left repeat; */
 }
 
 .images ul {
@@ -176,11 +182,14 @@ ul li:last-child {
 
 button {
   padding: 1rem;
-  border-radius: 4px;
+  padding-left: 1.8rem;
+  padding-right: 1.8rem;
+  /* border-radius: 4px; */
   background: var(--link-color);
   text-align: center;
   text-decoration: none;
-  font: bold 1.25em/1 "Open Sans", sans-serif;
+  font-family: "poppins", sans-serif;
+  font-weight: bold;
   letter-spacing: 1px;
   color: white;
   text-transform: uppercase;
@@ -188,6 +197,7 @@ button {
   transition: all 0.2s ease;
   cursor: pointer;
   margin: 0 1rem 0 0;
+  border: 0px;
 }
 
 .secondary-button {
@@ -198,12 +208,13 @@ button:focus,
 button:active,
 button:focus-within {
   outline: 0;
-  border-radius: 4px;
+  /* border-radius: 4px; */
 }
 
 button:hover {
   background-color: var(--link-hover-color);
-  /*opacity: 0.5;*/
+  border-radius: 15px;
+  /* opacity: 0.5; */
 }
 
 button:active {
@@ -252,8 +263,8 @@ a:hover {
 }
 
 p[class*="font-details-"] {
-  margin-top: .5rem;
-  margin-bottom: calc(2*var(--white-space));
+  margin-top: 0.5rem;
+  margin-bottom: calc(2 * var(--white-space));
   font-size: 0.75rem;
   font-family: var(--secondary-font);
   color: #6f6f6f;
@@ -272,7 +283,7 @@ footer {
   font-style: italic;
 }
 
-@media (min-width:800px) {
+@media (min-width: 800px) {
   main {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -290,7 +301,7 @@ footer {
   }
 }
 
-@media (min-width:900px) {
+@media (min-width: 900px) {
   .adjectives ul {
     flex-direction: row;
   }
